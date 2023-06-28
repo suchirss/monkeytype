@@ -8,3 +8,9 @@ services:
     volumes:
       - ../:/monkeytype
     entrypoint: 'bash -c "cd /monkeytype && npm run dev-fe"'
+    user: node
+    networks:
+      - test-network
+
+networks:
+  test-network:

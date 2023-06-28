@@ -10,6 +10,7 @@ services:
       - redis-data:/data
     networks:
       - test-network
+    user: "999"
 
   monkeytype-mongodb:
     container_name: monkeytype-mongodb
