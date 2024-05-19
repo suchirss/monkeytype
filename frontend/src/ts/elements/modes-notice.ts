@@ -9,6 +9,7 @@ import { isAuthenticated } from "../firebase";
 import * as CustomTextState from "../states/custom-text-name";
 import { getLanguageDisplayString } from "../utils/strings";
 import Format from "../utils/format";
+import challenges from "../../../static/challenges/_list.json";
 
 ConfigEvent.subscribe((eventKey) => {
   if (
